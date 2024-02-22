@@ -1,0 +1,29 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Supplier Insert</title>
+</head>
+<body>
+	
+	<form action="insert" method="post">
+	<table>
+	<tr>
+	<td>Name</td>
+		 <td><input type="text" name="name"></td>
+		 </tr>
+		 
+		Email <input type="text" name="email"><br>
+		Phone Number <input type="text" name="phone"><br>
+		User name <input type="text" name="uid"><br>
+		Password <input type="password" name="psw"><br>
+		
+		</table>
+		<input type="submit" name="submit" value="Create Supplier"> 
+		
+	</form>
+
+</body>
+</html>

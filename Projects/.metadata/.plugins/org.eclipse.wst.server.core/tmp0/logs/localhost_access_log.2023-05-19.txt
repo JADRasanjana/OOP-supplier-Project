@@ -1,0 +1,7 @@
+127.0.0.1 - - [19/May/2023:16:46:59 +0000] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [19/May/2023:16:47:02 +0000] "GET /SupplierDemo/login.jsp HTTP/1.1" 200 334
+0:0:0:0:0:0:0:1 - - [19/May/2023:16:47:02 +0000] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [19/May/2023:16:48:09 +0000] "GET /SupplierDemo/updatesupplier.jsp HTTP/1.1" 200 640
+0:0:0:0:0:0:0:1 - - [19/May/2023:16:48:09 +0000] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [19/May/2023:16:48:15 +0000] "POST /SupplierDemo/update HTTP/1.1" 200 315
+0:0:0:0:0:0:0:1 - - [19/May/2023:16:48:26 +0000] "GET /SupplierDemo/updatesupplier.jsp?id=&name=&email=&phone=&uname=&pass= HTTP/1.1" 200 616

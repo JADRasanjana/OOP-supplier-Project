@@ -1,0 +1,8 @@
+package com.supplier;
+
+public class DBConnect {
+	
+	private static String url = "jdbc:mysql://localhost:/vehicle_spare_parts";
+	
+
+}

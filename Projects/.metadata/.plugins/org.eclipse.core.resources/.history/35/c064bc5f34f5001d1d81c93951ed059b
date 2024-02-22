@@ -1,0 +1,65 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<table>
+	<c:forEach var="sup" items="${supDetails}">
+	
+	<c:set var="id" value="${sup.id}"/>
+	<c:set var="name" value="${sup.name}"/>
+	<c:set var="email" value="${sup.email}"/>
+	<c:set var="phone" value="${sup.phone}"/>
+	<c:set var="username" value="${sup.userName}"/>
+	<c:set var="password" value="${sup.password}"/>
+
+	<tr>
+		<td>Supplier ID</td>
+		<td>${sup.id}</td>
+	</tr>
+	<tr>
+		<td>Supplier Name</td>
+		<td>${sup.name}</td>
+	</tr>
+	<tr>
+		<td>Supplier Email</td>
+		<td>${sup.email}</td>
+	</tr>
+	<tr>
+		<td>Supplier Phone</td>
+		<td>${sup.phone}</td>
+	</tr>
+	<tr>
+		<td>Supplier UserName</td>
+		<td>${sup.userName}</td>
+	</tr>
+	<tr>
+		<td>Supplier Password</td>
+		<td>${sup.password}</td>
+	</tr>
+	
+	</c:forEach>
+	</table>
+	
+	<c:url value="updatesupplier.jsp" var="supupdate">
+		<c:param name="id" value="${id}"></c:param>
+			<c:param name="name" value="${name}"></c:param>
+				<c:param name="email" value="${email}"></c:param>
+					<c:param name="phone" value="${phone}"></c:param>
+						<c:param name="uname" value="${username}"></c:param>
+							<c:param name="pass" value="${password}"></c:param>
+	</c:url>
+	
+	
+	<a href="">
+		<input type="button" name="update" value="Update My Data">
+	</a>
+
+</body>
+</html>
